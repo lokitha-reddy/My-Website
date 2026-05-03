@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Portfolio Website for Narapureddy Lokitha</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.344.0/lucide.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-brand">Narapureddy Lokitha</div>
+                
+                <!-- Desktop Navigation -->
+                <div class="nav-desktop">
+                    <button class="nav-link" data-section="home">Home</button>
+                    <button class="nav-link" data-section="about">About</button>
+                    <button class="nav-link" data-section="skills">Skills</button>
+                    <button class="nav-link" data-section="projects">Projects</button>
+                    <button class="nav-link" data-section="experience">Experience</button>
+                    <button class="nav-link" data-section="achievements">Achievements</button>
+                    <button class="nav-link" data-section="certifications">Certifications</button>
+                    <button class="nav-link" data-section="contact">Contact</button>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i data-lucide="menu" class="menu-icon"></i>
+                    <i data-lucide="x" class="close-icon hidden"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div class="nav-mobile hidden" id="mobileNav">
+                <div class="nav-mobile-content">
+                    <button class="nav-mobile-link" data-section="home">Home</button>
+                    <button class="nav-mobile-link" data-section="about">About</button>
+                    <button class="nav-mobile-link" data-section="skills">Skills</button>
+                    <button class="nav-mobile-link" data-section="projects">Projects</button>
+                    <button class="nav-mobile-link" data-section="experience">Experience</button>
+                    <button class="nav-mobile-link" data-section="achievements">Achievements</button>
+                    <button class="nav-mobile-link" data-section="certifications">Certifications</button>
+                    <button class="nav-mobile-link" data-section="contact">Contact</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <!-- Content -->
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="text-blue">Narapureddy Lokitha</span>
+                    </h1>
+                    <p class="hero-description">
+                        BCA student specializing in <span class="font-semibold text-blue">Data Analytics</span> and
+                        <span class="font-semibold text-blue">UI/UX Design</span>, with hands-on experience in Python, SQL, Power BI, Tableau, and Figma.
+                    </p>
+                    
+                    <div class="hero-buttons">
+                        <button class="btn-primary" data-section="contact">Get In Touch</button>
+                        <button class="btn-secondary" data-section="projects">View Projects</button>
+                    </div>
+
+                    <!-- Contact Info -->
+                    <div class="hero-contact">
+                        <a href="mailto:nlokithareddy226@gmail.com" class="contact-item">
+                            <i data-lucide="mail"></i>
+                            nlokithareddy226@gmail.com
+                        </a>
+                        <a href="tel:+91-1234567890" class="contact-item">
+                            <i data-lucide="phone"></i>
+                            +91-1234567890
+                        </a>
+                        <div class="contact-item">
+                            <i data-lucide="map-pin"></i>
+                            Amdhra Pradesh,India
+                        </div>
+                    </div>
+
+                    <!-- Social Links -->
+                    <div class="hero-social">
+                        <a href="https://www.linkedin.com/in/narapureddylokitha/" target="_blank" class="social-link">
+                            <i data-lucide="linkedin"></i>
+                        </a>
+                        <a href="https://github.com/lokitha-reddy" target="_blank" class="social-link">
+                            <i data-lucide="github"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Profile Image -->
+                <div class="hero-image">
+                    <div class="profile-container">
+                        <div class="profile-main">NL</div>
+                        <div class="profile-badge badge-orange">Data<br>Analyst</div>
+                        <div class="profile-badge badge-green">UI/UX<br>Designer</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-description">
+                    Passionate about turning data into insights and creating user-centered designs that make a difference.
+                </p>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-card card-blue">
+                    <div class="about-icon icon-blue">
+                        <i data-lucide="user"></i>
+                    </div>
+                    <h3 class="about-card-title">Who I Am</h3>
+                    <p class="about-card-text">
+                        A dedicated BCA student with a passion for data analytics and user experience design. 
+                        I love solving complex problems through data-driven insights and creating intuitive digital experiences.
+                    </p>
+                </div>
+
+                <div class="about-card card-orange">
+                    <div class="about-icon icon-orange">
+                        <i data-lucide="target"></i>
+                    </div>
+                    <h3 class="about-card-title">What I Do</h3>
+                    <p class="about-card-text">
+                        I specialize in analyzing complex datasets to extract meaningful insights and designing 
+                        user-friendly interfaces that enhance user experience and drive business growth.
+                    </p>
+                </div>
+
+                <div class="about-card card-green">
+                    <div class="about-icon icon-green">
+                        <i data-lucide="heart"></i>
+                    </div>
+                    <h3 class="about-card-title">What I Love</h3>
+                    <p class="about-card-text">
+                        I'm passionate about continuous learning, collaborating with diverse teams, and creating 
+                        solutions that have real-world impact. Always excited about new challenges and opportunities.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Skills & Expertise</h2>
+                <p class="section-description">
+                    A comprehensive toolkit for data analysis, visualization, and user experience design.
+                </p>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill-category category-blue">
+                    <div class="skill-header">
+                        <div class="skill-icon icon-blue">
+                            <i data-lucide="code"></i>
+                        </div>
+                        <h3 class="skill-title">Programming</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag tag-blue">Python</span>
+                        <span class="skill-tag tag-blue">C</span>
+                        <span class="skill-tag tag-blue">Java</span>
+                        <span class="skill-tag tag-blue">SQL</span>
+                    </div>
+                </div>
+
+                <div class="skill-category category-green">
+                    <div class="skill-header">
+                        <div class="skill-icon icon-green">
+                            <i data-lucide="bar-chart-3"></i>
+                        </div>
+                        <h3 class="skill-title">Data Analytics</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag tag-green">Power BI</span>
+                        <span class="skill-tag tag-green">Tableau</span>
+                        <span class="skill-tag tag-green">Excel</span>
+                        <span class="skill-tag tag-green">Pandas</span>
+                        <span class="skill-tag tag-green">NumPy</span>
+                        <span class="skill-tag tag-green">Matplotlib</span>
+                    </div>
+                </div>
+
+                <div class="skill-category category-purple">
+                    <div class="skill-header">
+                        <div class="skill-icon icon-purple">
+                            <i data-lucide="palette"></i>
+                        </div>
+                        <h3 class="skill-title">UI/UX Tools</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag tag-purple">Figma</span>
+                        <span class="skill-tag tag-purple">Adobe XD</span>
+                        <span class="skill-tag tag-purple">Canva</span>
+                    </div>
+                </div>
+
+                <div class="skill-category category-orange">
+                    <div class="skill-header">
+                        <div class="skill-icon icon-orange">
+                            <i data-lucide="users"></i>
+                        </div>
+                        <h3 class="skill-title">Soft Skills</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag tag-orange">Problem-solving</span>
+                        <span class="skill-tag tag-orange">Team Collaboration</span>
+                        <span class="skill-tag tag-orange">Communication</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-description">
+                    A showcase of my work in data analytics, UI/UX design, and web development.
+                </p>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/4393668/pexels-photo-4393668.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Food Delivery App UI/UX">
+                        <div class="project-icon icon-blue">
+                            <i data-lucide="smartphone"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Food Delivery App UI/UX</h3>
+                        <p class="project-description">
+                            Designed a mobile-first food delivery application with intuitive menu browsing, streamlined cart flow, and comprehensive usability testing. Created wireframes, prototypes, and conducted user research.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">Figma</span>
+                            <span class="project-tag">Adobe XD</span>
+                            <span class="project-tag">User Research</span>
+                            <span class="project-tag">Prototyping</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link btn-blue">
+                                <i data-lucide="external-link"></i>
+                                Live Demo
+                            </a>
+                            <a href="#" class="project-link btn-outline">
+                                <i data-lucide="github"></i>
+                                Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/590041/pexels-photo-590041.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Sales Data Analytics Dashboard">
+                        <div class="project-icon icon-green">
+                            <i data-lucide="bar-chart"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Sales Data Analytics Dashboard</h3>
+                        <p class="project-description">
+                            Built interactive dashboards analyzing sales performance across multiple regions. Cleaned and processed large datasets using Python, creating visualizations that provided actionable business insights.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">Power BI</span>
+                            <span class="project-tag">Tableau</span>
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">Pandas</span>
+                            <span class="project-tag">SQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link btn-green">
+                                <i data-lucide="external-link"></i>
+                                Live Demo
+                            </a>
+                            <a href="#" class="project-link btn-outline">
+                                <i data-lucide="github"></i>
+                                Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Portfolio Website">
+                        <div class="project-icon icon-purple">
+                            <i data-lucide="globe"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Portfolio Website</h3>
+                        <p class="project-description">
+                            Designed and developed this responsive portfolio website from scratch. Features modern design principles, smooth animations, and optimized performance. Built with HTML, CSS, and JavaScript.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">HTML</span>
+                            <span class="project-tag">CSS</span>
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">Responsive Design</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://my-portfolio-two-opal-70.vercel.app/" class="project-link btn-purple">
+                                <i data-lucide="external-link"></i>
+                                Live Demo
+                            </a>
+                            <a href="https://github.com/lokitha-reddy/My-Portfolio" class="project-link btn-outline">
+                                <i data-lucide="github"></i>
+                                Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Professional Experience</h2>
+                <p class="section-description">
+                    Hands-on experience across data analytics, UI/UX design, and software development.
+                </p>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-line"></div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot dot-blue">
+                        <i data-lucide="briefcase"></i>
+                    </div>
+                    <div class="timeline-content content-blue">
+                        <div class="timeline-date">
+                            <i data-lucide="calendar"></i>
+                            2024
+                        </div>
+                        <h3 class="timeline-title">UI/UX Design Intern</h3>
+                        <h4 class="timeline-company">Codtech IT Solutions</h4>
+                        <p class="timeline-description">
+                            Created wireframes, prototypes, and user interfaces for web and mobile applications. Conducted user research and usability testing to optimize user experience.
+                        </p>
+                        <div class="timeline-achievements">
+                            <h5>Key Achievements:</h5>
+                            <ul>
+                                <li>Designed 15+ wireframes and interactive prototypes</li>
+                                <li>Improved user engagement by 25% through UX optimization</li>
+                                <li>Collaborated with development team to ensure design feasibility</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot dot-green">
+                        <i data-lucide="briefcase"></i>
+                    </div>
+                    <div class="timeline-content content-green">
+                        <div class="timeline-date">
+                            <i data-lucide="calendar"></i>
+                            2024
+                        </div>
+                        <h3 class="timeline-title">Data Analytics Intern</h3>
+                        <h4 class="timeline-company">Codex Techno</h4>
+                        <p class="timeline-description">
+                            Worked with large datasets to extract meaningful insights using Python and SQL. Created interactive dashboards and visualizations for business stakeholders.
+                        </p>
+                        <div class="timeline-achievements">
+                            <h5>Key Achievements:</h5>
+                            <ul>
+                                <li>Processed and cleaned 100K+ data records</li>
+                                <li>Built 8 interactive Power BI dashboards</li>
+                                <li>Provided actionable insights that improved decision-making</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot dot-purple">
+                        <i data-lucide="briefcase"></i>
+                    </div>
+                    <div class="timeline-content content-purple">
+                        <div class="timeline-date">
+                            <i data-lucide="calendar"></i>
+                            2024
+                        </div>
+                        <h3 class="timeline-title">Python Development Intern</h3>
+                        <h4 class="timeline-company">Cornify Technologies</h4>
+                        <p class="timeline-description">
+                            Developed backend scripts and automation tools using Python. Worked on data processing pipelines and API integrations.
+                        </p>
+                        <div class="timeline-achievements">
+                            <h5>Key Achievements:</h5>
+                            <ul>
+                                <li>Automated 5+ manual processes using Python scripts</li>
+                                <li>Reduced data processing time by 40%</li>
+                                <li>Integrated multiple APIs for data collection</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot dot-orange">
+                        <i data-lucide="briefcase"></i>
+                    </div>
+                    <div class="timeline-content content-orange">
+                        <div class="timeline-date">
+                            <i data-lucide="calendar"></i>
+                            2023-2024
+                        </div>
+                        <h3 class="timeline-title">Student Ambassador</h3>
+                        <h4 class="timeline-company">Lets Upgrade</h4>
+                        <p class="timeline-description">
+                            Led campus engagement initiatives and organized tech events. Mentored fellow students in programming and career development.
+                        </p>
+                        <div class="timeline-achievements">
+                            <h5>Key Achievements:</h5>
+                            <ul>
+                                <li>Organized 10+ tech workshops and seminars</li>
+                                <li>Mentored 50+ students in programming</li>
+                                <li>Increased platform engagement by 30% in college</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="achievements">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Achievements & Recognition</h2>
+                <p class="section-description">
+                    Highlights of my academic and professional accomplishments.
+                </p>
+            </div>
+
+            <div class="achievements-grid">
+                <div class="achievement-card card-yellow">
+                    <div class="achievement-header">
+                        <div class="achievement-icon icon-yellow">
+                            <i data-lucide="trophy"></i>
+                        </div>
+                        <div class="achievement-content">
+                            <div class="achievement-title-row">
+                                <h3 class="achievement-title">Team Leader - XHorizon Hackathon</h3>
+                                <span class="achievement-highlight highlight-yellow">Team Leadership</span>
+                            </div>
+                            <p class="achievement-subtitle">24-hour hackathon focused on website development</p>
+                            <p class="achievement-description">
+                                Led a team of 4 developers to create an innovative web solution. Managed project timeline, coordinated team efforts, and delivered a fully functional website within 24 hours.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="achievement-card card-green">
+                    <div class="achievement-header">
+                        <div class="achievement-icon icon-green">
+                            <i data-lucide="target"></i>
+                        </div>
+                        <div class="achievement-content">
+                            <div class="achievement-title-row">
+                                <h3 class="achievement-title">Industrial Training</h3>
+                                <span class="achievement-highlight highlight-green">Industry Experience</span>
+                            </div>
+                            <p class="achievement-subtitle">Placemantra - Real-time projects and industry exposure</p>
+                            <p class="achievement-description">
+                                Completed comprehensive industrial training program working on real-time projects. Gained hands-on experience with industry-standard tools and methodologies.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="achievement-card card-blue">
+                    <div class="achievement-header">
+                        <div class="achievement-icon icon-blue">
+                            <i data-lucide="users"></i>
+                        </div>
+                        <div class="achievement-content">
+                            <div class="achievement-title-row">
+                                <h3 class="achievement-title">Event Coordinator</h3>
+                                <span class="achievement-highlight highlight-blue">Event Management</span>
+                            </div>
+                            <p class="achievement-subtitle">College festivals and technical events</p>
+                            <p class="achievement-description">
+                                Successfully organized and coordinated multiple college festivals and technical events. Managed logistics, vendor coordination, and team management for events with 500+ participants.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="achievement-card card-purple">
+                    <div class="achievement-header">
+                        <div class="achievement-icon icon-purple">
+                            <i data-lucide="award"></i>
+                        </div>
+                        <div class="achievement-content">
+                            <div class="achievement-title-row">
+                                <h3 class="achievement-title">Academic Excellence</h3>
+                                <span class="achievement-highlight highlight-purple">Academic Achievement</span>
+                            </div>
+                            <p class="achievement-subtitle">Consistent high performance in BCA program</p>
+                            <p class="achievement-description">
+                                Maintained excellent academic record while actively participating in extracurricular activities and internships. Recognized for balancing academics with practical experience.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stats Section -->
+            <div class="stats-section">
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-number">4+</div>
+                        <div class="stat-label">Internships</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">15+</div>
+                        <div class="stat-label">Projects</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">8+</div>
+                        <div class="stat-label">Certifications</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">Students Mentored</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Certifications</h2>
+                <p class="section-description">
+                    Professional certifications that validate my expertise in data analytics and design.
+                </p>
+            </div>
+
+            <div class="certifications-grid">
+                <div class="certification-card">
+                    <div class="certification-header">
+                        <div class="certification-info">
+                            <div class="certification-logo">🎨</div>
+                            <div>
+                                <h3 class="certification-title">Google UX Design</h3>
+                                <p class="certification-provider">Coursera</p>
+                            </div>
+                        </div>
+                        <div class="certification-verified">
+                            <i data-lucide="check-circle"></i>
+                            <span>Verified</span>
+                        </div>
+                    </div>
+                    <div class="certification-content">
+                        <div class="certification-date">
+                            <i data-lucide="calendar"></i>
+                            2024
+                        </div>
+                        <p class="certification-description">
+                            Comprehensive program covering user research, wireframing, prototyping, and usability testing.
+                        </p>
+                        <div class="certification-skills">
+                            <h4>Skills Acquired:</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag tag-blue">User Research</span>
+                                <span class="skill-tag tag-blue">Wireframing</span>
+                                <span class="skill-tag tag-blue">Prototyping</span>
+                                <span class="skill-tag tag-blue">Figma</span>
+                                <span class="skill-tag tag-blue">Adobe XD</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="certification-card">
+                    <div class="certification-header">
+                        <div class="certification-info">
+                            <div class="certification-logo">📊</div>
+                            <div>
+                                <h3 class="certification-title">Data Visualization & Analytics Specialist</h3>
+                                <p class="certification-provider">L&T Edu Tech</p>
+                            </div>
+                        </div>
+                        <div class="certification-verified">
+                            <i data-lucide="check-circle"></i>
+                            <span>Verified</span>
+                        </div>
+                    </div>
+                    <div class="certification-content">
+                        <div class="certification-date">
+                            <i data-lucide="calendar"></i>
+                            2024
+                        </div>
+                        <p class="certification-description">
+                            Advanced training in data visualization techniques using industry-standard tools.
+                        </p>
+                        <div class="certification-skills">
+                            <h4>Skills Acquired:</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag tag-blue">Power BI</span>
+                                <span class="skill-tag tag-blue">Tableau</span>
+                                <span class="skill-tag tag-blue">Data Analysis</span>
+                                <span class="skill-tag tag-blue">Python</span>
+                                <span class="skill-tag tag-blue">Statistics</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="certification-card">
+                    <div class="certification-header">
+                        <div class="certification-info">
+                            <div class="certification-logo">💡</div>
+                            <div>
+                                <h3 class="certification-title">Design Thinking for Innovation</h3>
+                                <p class="certification-provider">Coursera</p>
+                            </div>
+                        </div>
+                        <div class="certification-verified">
+                            <i data-lucide="check-circle"></i>
+                            <span>Verified</span>
+                        </div>
+                    </div>
+                    <div class="certification-content">
+                        <div class="certification-date">
+                            <i data-lucide="calendar"></i>
+                            2024
+                        </div>
+                        <p class="certification-description">
+                            Design thinking methodology for solving complex problems and driving innovation.
+                        </p>
+                        <div class="certification-skills">
+                            <h4>Skills Acquired:</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag tag-blue">Design Thinking</span>
+                                <span class="skill-tag tag-blue">Innovation</span>
+                                <span class="skill-tag tag-blue">Problem Solving</span>
+                                <span class="skill-tag tag-blue">User Empathy</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="certification-card">
+                    <div class="certification-header">
+                        <div class="certification-info">
+                            <div class="certification-logo">🗄️</div>
+                            <div>
+                                <h3 class="certification-title">Introduction to Big Data Analytics</h3>
+                                <p class="certification-provider">L&T Edu Tech</p>
+                            </div>
+                        </div>
+                        <div class="certification-verified">
+                            <i data-lucide="check-circle"></i>
+                            <span>Verified</span>
+                        </div>
+                    </div>
+                    <div class="certification-content">
+                        <div class="certification-date">
+                            <i data-lucide="calendar"></i>
+                            2023
+                        </div>
+                        <p class="certification-description">
+                            Foundational course in big data concepts, tools, and analytics methodologies.
+                        </p>
+                        <div class="certification-skills">
+                            <h4>Skills Acquired:</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag tag-blue">Big Data</span>
+                                <span class="skill-tag tag-blue">Hadoop</span>
+                                <span class="skill-tag tag-blue">Spark</span>
+                                <span class="skill-tag tag-blue">Data Mining</span>
+                                <span class="skill-tag tag-blue">SQL</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Certification Summary -->
+            <div class="certification-summary">
+                <div class="summary-header">
+                    <h3 class="summary-title">Continuous Learning</h3>
+                    <p class="summary-description">
+                        Committed to staying updated with the latest industry trends and technologies.
+                    </p>
+                </div>
+                <div class="summary-stats">
+                    <div class="summary-stat stat-blue">
+                        <div class="summary-number">8+</div>
+                        <div class="summary-label">Certifications Earned</div>
+                    </div>
+                    <div class="summary-stat stat-green">
+                        <div class="summary-number">200+</div>
+                        <div class="summary-label">Hours of Training</div>
+                    </div>
+                    <div class="summary-stat stat-purple">
+                        <div class="summary-number">4</div>
+                        <div class="summary-label">Specialization Areas</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Let's Connect</h2>
+                <p class="section-description">
+                    Ready to collaborate on exciting projects or discuss opportunities in data analytics and design.
+                </p>
+            </div>
+
+            <div class="contact-grid">
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <h3 class="contact-info-title">Get in Touch</h3>
+                    
+                    <div class="contact-items">
+                        <div class="contact-item-card">
+                            <div class="contact-item-icon icon-blue">
+                                <i data-lucide="mail"></i>
+                            </div>
+                            <div>
+                                <h4 class="contact-item-title">Email</h4>
+                                <a href="mailto:nlokithareddy226@gmail.com" class="contact-item-link">
+                                    nlokithareddy226@gmail.com
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item-card">
+                            <div class="contact-item-icon icon-green">
+                                <i data-lucide="phone"></i>
+                            </div>
+                            <div>
+                                <h4 class="contact-item-title">Phone</h4>
+                                <a href="tel:+91-1234567890" class="contact-item-link">
+                                    +91-1234567890
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item-card">
+                            <div class="contact-item-icon icon-purple">
+                                <i data-lucide="map-pin"></i>
+                            </div>
+                            <div>
+                                <h4 class="contact-item-title">Location</h4>
+                                <p class="contact-item-text">Andhra Pradesh, India</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Links -->
+                    <div class="contact-social">
+                        <h4 class="contact-social-title">Connect with me</h4>
+                        <div class="contact-social-links">
+                            <a href="https://linkedin.com/in/lokitha" target="_blank" class="social-link-card social-linkedin">
+                                <i data-lucide="linkedin"></i>
+                            </a>
+                            <a href="https://github.com/lokitha" target="_blank" class="social-link-card social-github">
+                                <i data-lucide="github"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Download Resume Button -->
+                    <button id="downloadResumeBtn" class="download-resume-btn">
+                        <i data-lucide="download"></i>
+                        Download Resume
+                    </button>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <h3 class="contact-form-title">Send a Message</h3>
+                    
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Your Name</label>
+                            <input type="text" id="name" name="name" required class="form-input" placeholder="Enter your name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" id="email" name="email" required class="form-input" placeholder="Enter your email">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea id="message" name="message" required rows="5" class="form-textarea" placeholder="Your message..."></textarea>
+                        </div>
+
+                        <button type="submit" class="form-submit-btn">
+                            <i data-lucide="send"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <h3 class="footer-title">Narapureddy Lokitha</h3>
+                <p class="footer-description">
+                    Data Analytics & UI/UX Design Specialist passionate about creating meaningful digital experiences 
+                    and extracting insights from data to drive business decisions.
+                </p>
+                
+                <div class="footer-built">
+                    <span>Built with</span>
+                    <i data-lucide="heart" class="heart-icon"></i>
+                    <span>using HTML, CSS & JavaScript</span>
+                </div>
+                
+                <div class="footer-copyright">
+                    <p>&copy; <span id="currentYear"></span> Narapureddy Lokitha. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
